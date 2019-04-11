@@ -1,0 +1,11 @@
+/* body{
+    zoom: 110%;
+} */
+
+.whiteColor{
+    color: #fff !important;
+}
+
+.whiteColor:hover{
+    color:#FAC921 !important;
+}
