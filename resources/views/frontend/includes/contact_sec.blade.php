@@ -25,7 +25,7 @@
                         <div class="subcribe-form fl-wrap">
                             <form id="subscribe_form" class="fl-wrap" method="POST" action="{{route('save_subscriber')}}">
                                 @csrf
-                                <input class="enteremail" name="email_sub" id="email_sub" placeholder="email" spellcheck="false" type="email">
+                                <input class="enteremail" name="email_sub" id="email_sub" placeholder="email" spellcheck="false" type="email" required>
                                 <button type="submit" id="subscribe-button" class="subscribe-button"><i class="fal fa-paper-plane"></i> Send </button>
                                 <label id="sub_message" for="subscribe-email" class="subscribe-message"></label>
                             </form>
