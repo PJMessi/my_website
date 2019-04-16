@@ -7,14 +7,17 @@ use Illuminate\Foundation\Http\FormRequest;
 use Auth;
 
 use App\User;
+use App\Subscriber;
 
 class DashboardController extends Controller
 {
     public function show_backend_dashboard(){
         $users = User::all();
+        $subscriber_emails = Subscriber::all();
         return view("backend.dashboard")->with([
             "title" => "dashboard",
             "users" => $users,
+            "subscriber_emails" => $subscriber_emails,
         ]);
     }
 

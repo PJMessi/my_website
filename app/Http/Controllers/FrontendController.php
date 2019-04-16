@@ -54,7 +54,7 @@ class FrontendController extends Controller
             "testmonial" => $testmonial_sec,
             "titems" => $titem_sec,
             "contact" => $contact,
-            "miscellaneous" => $miscellaneous
+            "miscellaneous" => $miscellaneous,
         ]);
     }
 

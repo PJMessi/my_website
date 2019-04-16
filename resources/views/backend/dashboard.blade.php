@@ -1,27 +1,8 @@
 @extends('backend.layouts.be_layout')
 
 @section('content')
-{{-- @include("backend.includes.backend_func") --}}
 
-{{-- <main id="main-container">
-    <!-- Hero -->
-    <div class="bg-image overflow-hidden" style="background-image: url('{{asset("backend/media/photos/photo3@2x.jpg")}}');">
-        <div class="bg-primary-dark-op">
-            <div class="content content-narrow content-full">
-                <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center mt-5 mb-2 text-center text-sm-left">
-                    <div class="flex-sm-fill">
-                        <h1 class="font-w600 text-white mb-0 invisible" data-toggle="appear">Dashboard</h1>
-                        <h2 class="h4 font-w400 text-white-75 mb-0 invisible" data-toggle="appear" data-timeout="250">Welcome {{Auth::user()->name}}</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END Hero -->
-</main> --}}
-
-
-    <!-- Main Container -->
+<!-- Main Container -->
     <main id="main-container">
 
         <!-- Hero -->
@@ -136,6 +117,34 @@
                                         
                                     </tbody>
                                 </table>
+
+                                <hr>
+                                
+                                <!--for subscribers-->
+                                <table class="table table-borderless table-vcenter">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center" style="width: 50px;">#</th>
+                                            <th>Subscribers</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @if(count($subscriber_emails) > 0)
+                                            @foreach($subscriber_emails as $subscriber_email)
+                                                <tr>
+                                                    <th class="text-center" scope="row">{{$loop->index + 1}}</th>
+                                                    <td class="font-w600 font-size-sm">
+                                                        <a>{{$subscriber_email->email}}</a>
+                                                    </td>
+                                                </tr>                                                
+                                            @endforeach
+                                        @endif
+                                        
+                                    </tbody>
+                                </table>
+                                <!--end for subscribers-->
+
+
                             </div>
 
                         </div>
