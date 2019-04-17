@@ -109,8 +109,13 @@
                                                     <div class="fl-wrap pr-list-det">
                                                         <div class="popup-avatar"><img src="images/avatar/1.jpg" alt=""></div>
                                                         <h5>Client Review.</h5>
-                                                        <p>"{{$portfolio->testmonial->content}}"</p>
-                                                        <p>{{$portfolio->testmonial->name}}</p>
+
+                                                        @if( $portfolio->testmonial->status == "PUBLISHED" )
+                                                            <p>"{{$portfolio->testmonial->content}}"</p>
+                                                            <p>{{$portfolio->testmonial->name}}</p>
+                                                        @else
+                                                            <p>Client hasn't posted their review.</p>
+                                                        @endif
                                                     </div>
                                                 </div>
                                             </div>
