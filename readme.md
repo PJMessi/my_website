@@ -1,4 +1,5 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+
 ## About the project
 Its a website made using Laravel. It also consist the Content Management System (CMS).
 
