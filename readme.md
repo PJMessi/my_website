@@ -4,6 +4,8 @@
 Its a website made using Laravel. It also consist the Content Management System (CMS).
 
 [Live Preview](http://pjmessi.visioninteriornepal.com/)
+for admin panel: username: pjmessi10
+                 password: myfamily10
 
 <h4>To work with this repository, do the following:</h4>
 <ol>
