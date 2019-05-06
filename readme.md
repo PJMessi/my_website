@@ -1,3 +1,8 @@
+## About the project
+Its a website made using Laravel. It also consist the Content Management System (CMS).
+
+[Live Preview](http://pjmessi.visioninteriornepal.com/)
+
 <h4>To work with this repository, do the following:</h4>
 <ol>
     <li><b>git clone <i>URL</i></b></li>
